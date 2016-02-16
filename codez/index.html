@@ -4,7 +4,10 @@
 	<meta charset='utf-8'>
 	<title>Sing Together</title>
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
-	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300|Ubuntu:400,300,500,700' rel='stylesheet' type='text/css'>	<link rel='stylesheet' href='css/style.css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/fontawesome.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300|Ubuntu:400,300,500,700' rel='stylesheet' type='text/css'>
+	<link rel='stylesheet' href='css/style.css'>
 </head>
 <body>
 	<header>
@@ -15,7 +18,31 @@
 				</ul>
 	</header>
 	<section>
+		<h1>一起唱 &nbsp<i class='fa fa-heart icon-pink'></i>&nbsp SING TOGETHER</h1>
+		<p class='subtext'>Learn Chinese with music you like!</p>
 	</section>
+
+<!-- Dropdown select choices -->
+	<div class='get-started'>
+		<form>
+			<select name="chinese level dropdown" class='custom-dropdown'>
+				<option value="select chinese level" selected>Select Chinese Level &nbsp &nbsp &#xf0d7;</option>
+				<option value="beginner">Beginner</option>
+				<option value="intermediate">Intermediate</option>
+				<option value="advanced">Advanced</option>
+			</select>
+			<p class='alignleft'> &nbsp &nbsp & &nbsp &nbsp </p>
+			<select name="music genre dropdown" class='custom-dropdown'>
+				<option value="genre" selected>Select Genre &nbsp &nbsp &#xf0d7;</option>
+				<option value="beginner">Beginner</option>
+				<option value="intermediate">Intermediate</option>
+				<option value="advanced">Advanced</option>
+			</select>
+			<input type='submit' value='Find Songs' class='primary-button alignleft'/>
+	</form>
+	</div>
+	<!-- End dropdown select choices -->
+
 	<footer>
 	</footer>
 	<script src='https://code.jquery.com/jquery-1.12.0.js'></script>
