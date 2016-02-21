@@ -29,6 +29,8 @@ Developer @GA in SF
 
 html {
 	font-size: 10px;
+	position: relative;
+	min-height: 100%;
 }
 
 body {
@@ -37,9 +39,8 @@ body {
 	color: #6F6C6C;
 	text-align: center;
 	font-weight: 200;
-  margin:0;
+  margin:0 0 5px;
 	padding:0;
-	height:100%;
 }
 
 h1 {
@@ -136,8 +137,8 @@ footer {
 	padding: 10px 0px;
 	width:100%;
 	height:40px;
-	position:absolute;
 	bottom:0;
+	position: absolute;
 }
 
 footer p {
@@ -188,7 +189,7 @@ footer p {
 .container {
 	margin: 0 auto;
 	max-width: 1820px;
-	padding: 0px 150px;
+	padding: 0px 150px 50px 150px;
 }
 
 .image {
