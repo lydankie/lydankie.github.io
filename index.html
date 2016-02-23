@@ -1,57 +1,63 @@
 <!doctype html>
 <html lang='en-us'>
-<head>
-	<meta charset='utf-8'>
-	<title>Sing Together</title>
-	<meta name='viewport' content='width=device-width, initial-scale=1'>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/fontawesome.css">
-	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300|Ubuntu:400,300,500,700' rel='stylesheet' type='text/css'>
-	<link rel='stylesheet' href='css/style.css'>
-</head>
-<body>
-	<header>
-		<div class='logo'>一起唱</div>
-				<ul>
-					<li>Contact</li>
-					<li>About</li>
-				</ul>
-	</header>
+	<head>
+		<meta charset='utf-8'>
+		<title>Sing Together</title>
+		<meta name='viewport' content='width=device-width, initial-scale=1'>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/fontawesome.css">
+		<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300|Ubuntu:400,300,500,700' rel='stylesheet' type='text/css'>
+		<link rel='stylesheet' href='css/style.css'>
+	</head>
+	<body>
+		<header>
+			<div class='logo'>一起唱</div>
+					<ul>
+						<li>Contact</li>
+						<li>About</li>
+					</ul>
+		</header>
 
 		<section class='hero'>
-		<h1>一起唱 &nbsp<i class='fa fa-heart icon-pink'></i>&nbsp SING TOGETHER</h1>
-		<p class='subtext'>Learn Chinese through music!</p>
-	</section>
-<!-- Dropdown select choices -->
-<div class='get-started'>
-		<form method='GET' action='results.html'>
-			<select name="chinese level dropdown" class='custom-dropdown'>
-				<option value="select chinese level" selected>Select Chinese Level &nbsp &nbsp &#xf0d7;</option>
-				<option value="beginner">Beginner</option>
-				<option value="intermediate">Intermediate</option>
-				<option value="advanced">Advanced</option>
-			</select>
-			<p class='alignleft'> &nbsp &nbsp & &nbsp &nbsp </p>
-			<select name="music genre dropdown" class='custom-dropdown'>
-				<option value="genre" selected>Select Genre &nbsp &nbsp &#xf0d7;</option>
-				<option value="rock">Rock</option>
-				<option value="pop">Pop</option>
-				<option value="acoustic">Acoustic</option>
-				<option value="oldies">Oldies</option>
-				<option value="punk">Punk</option>
-				<option value="rap">Rap</option>
-			</select>
-			<input type='submit' value='Find Songs' class='primary-button alignleft'/>
-	</form>
-	</div>
-	<!-- End dropdown select choices -->
-</div>
-<!-- End container div -->
-<div class='clear'></div>
-<footer>
-	<p>made by 丁羅蘭 for funsies</p>
-</footer>
-<script src='https://code.jquery.com/jquery-1.12.0.js'></script>
-<script src='js/main.js'></script>
-</body>
+			<h1>一起唱 &nbsp<i class='fa fa-heart icon-pink'></i>&nbsp SING TOGETHER</h1>
+			<p class='subtext'>Learn Chinese through music!</p>
+		</section>
+
+		<!-- Dropdown select choices -->
+		<div class='get-started'>
+			<form class='info-form'>
+				<select name="chinese level dropdown" class='custom-dropdown chinese-level-dropdown'>
+					<option value="Select chinese level" selected>Select Chinese Level &nbsp &nbsp &#xf0d7;</option>
+					<option value="Beginner">Beginner</option>
+					<option value="Intermediate">Intermediate</option>
+					<option value="Advanced">Advanced</option>
+				</select>
+				<p class='alignleft'> &nbsp &nbsp & &nbsp &nbsp </p>
+				<select name="Music genre dropdown" class='custom-dropdown genre-dropdown'>
+					<option value="Genre" selected>Select Genre &nbsp &nbsp &#xf0d7;</option>
+					<option value="Rock">Rock</option>
+					<option value="Pop">Pop</option>
+					<option value="Acoustic">Acoustic</option>
+					<option value="Oldies">Oldies</option>
+					<option value="Punk">Punk</option>
+					<option value="Rap">Rap</option>
+				</select>
+				<input type='submit' value='Find Songs' class='primary-button alignleft'/>
+			</form>
+		</div>
+
+		<section>
+			<ul class='song-result-list'>
+				<li class='song-result'> </li>
+			</ul>
+		</section>
+
+		<!-- <footer>
+			<p>made by 丁羅蘭 for funsies</p>
+		</footer> -->
+
+		<script src='https://code.jquery.com/jquery-1.12.0.js'></script>
+		<script src='js/index.js'></script>
+
+	</body>
 </html>

@@ -255,7 +255,8 @@ margin:0; padding:0;
 }
 
 li p {
-	line-height: 1rem;
+	line-height: .8rem;
+	font-size: 1.4rem;
 }
 
 .song-result {
