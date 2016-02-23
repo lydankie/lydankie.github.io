@@ -54,6 +54,7 @@ h1 {
 
 p {
 	font-size: 1.8rem;
+	line-height: 2rem
 }
 
 header {
@@ -84,7 +85,7 @@ header li {
 
 section {
 	width: 100%;
-	padding: 60px 0px 60px 0px;
+	padding: 100px 0px 60px 0px;
 }
 
 section.hero {
@@ -189,14 +190,14 @@ footer p {
 .container {
 	margin: 0 auto;
 	max-width: 1820px;
-	padding: 0px 150px 50px 150px;
+	padding: 100px 100px 50px 100px;
 }
 
 .image {
     position: relative;
     width: 150px;
     height: 150px;
-		display: inline-block;
+		display: block;
 }
 
 .image img {
@@ -206,7 +207,7 @@ footer p {
 		display: block;
 }
 
-.image:after {
+/*.image:after {
     content: '\A';
     position: absolute;
     width: 100%; height:60%;
@@ -228,7 +229,7 @@ footer p {
 		white-space: pre;
     color: #fff;
 		text-align: center;
-}
+}*/
 
 .result-square {
 	float: left;
@@ -240,13 +241,13 @@ footer p {
 	float: left;
 	text-align: left;
 	margin-left: 20px;
-	width: 230px;
+	width: 200px;
 	height: 150px;
 }
 
 ul .song-result-list {
-	float: left;
-	padding: 30px 30px;
+	/*float: left;*/
+	padding: 0px 0px;
 }
 
 li {
@@ -255,7 +256,7 @@ margin:0; padding:0;
 }
 
 li p {
-	line-height: .8rem;
+	line-height: 1.3rem;
 	font-size: 1.4rem;
 }
 
@@ -263,7 +264,7 @@ li p {
 	float: left;
 	align: top;
 	max-height: 150px;
-	padding: 30px 50px;
+	padding: 15px 10px;
 }
 
 .song-title {
