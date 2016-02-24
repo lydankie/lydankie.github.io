@@ -54,7 +54,12 @@ h1 {
 
 p {
 	font-size: 1.8rem;
-	line-height: 2rem
+	line-height: 2rem;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
 }
 
 header {
@@ -190,7 +195,7 @@ footer p {
 .container {
 	margin: 0 auto;
 	max-width: 1820px;
-	padding: 100px 100px 50px 100px;
+	padding: 0px 100px 50px 100px;
 }
 
 .image {
@@ -233,7 +238,7 @@ footer p {
 
 .result-square {
 	float: left;
-	display: inline-block;
+	/*display: inline-block;*/
 }
 
 .result-description {
@@ -241,18 +246,19 @@ footer p {
 	float: left;
 	text-align: left;
 	margin-left: 20px;
+	padding-right: 20px;
 	width: 200px;
 	height: 150px;
 }
 
 ul .song-result-list {
 	/*float: left;*/
-	padding: 0px 0px;
 }
 
 li {
+display: inline-block;
 list-style: none;
-margin:0; padding:0;
+padding-bottom: 20px;
 }
 
 li p {
@@ -261,12 +267,30 @@ li p {
 }
 
 .song-result {
-	float: left;
-	align: top;
+	/*float: left;
+	align: top;*/
 	max-height: 150px;
-	padding: 15px 10px;
+	/*padding: 15px 10px;*/
 }
 
 .song-title {
 	font-weight: 500;
+	font-size: 2rem;
+}
+
+.left-column {
+	width: 30%;
+	display: block;
+	float: left;
+}
+
+.right-column {
+	width: 70%;
+	float: left;
+	display: block;
+}
+
+.text-align-left {
+	text-align: left;
+	/*padding-left: 20px;*/
 }

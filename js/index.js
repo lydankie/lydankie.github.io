@@ -13,10 +13,10 @@ $(document).ready(function(){
 
     $.each(data, function( i, value ) {
       console.log(value)
-      console.log(value["artist"])
-      console.log(value.songName)
+      console.log(value["artistEnglish"])
+      console.log(value.songNameEnglish)
       if (userChineseLevel==value.chineseLevel && userGenre==value.genre) {
-        $('.song-result-list').append("<li><div class='song-result'> <div class='image result-square'><img src="+value.albumImage+" alt='album image'></div><div class='result-description'><p>" + value.artistEnglish +"</p><p>"+value.artistMandarin+"</p><p>" + value.songNameEnglish +"</p><p>" + value.songNameMandarin + "</p><p>"+value.genre+"</div></div></li>");
+        $('.song-result-list').append("<a href='song.html'><li><div class='song-result'><div class='image result-square'><img src="+value.albumImage+" alt='album image'></div><div class='result-description'><p>" + value.artistEnglish +"</p><p>"+value.artistMandarin+"</p><p>" + value.songNameEnglish +"</p><p>" + value.songNameMandarin + "</p><p>"+value.genre+"</div></div></li></a>");
       }
       // else {
       //   $('.song-result-list').append("Sorry! I don't have any songs like this in my demo");
