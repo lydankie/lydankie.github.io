@@ -3,6 +3,7 @@ $(document).ready(function(){
 
   $('.info-form').submit(function(event){
     event.preventDefault();
+    $('.song-result').remove();
     console.log('testing');
 
     var userChineseLevel = $('.chinese-level-dropdown').val();
