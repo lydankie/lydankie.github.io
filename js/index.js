@@ -1,5 +1,21 @@
 $(document).ready(function(){
 
+  $(document).on('change', 'input.pinyin-checkbox', function () {
+    if ($(this).is(':checked')) {
+      $('.pinyin-lyric').show();
+    } else {
+      $('.pinyin-lyric').hide();
+    }
+  })
+
+  $(document).on('change', 'input.english-checkbox', function () {
+    if ($(this).is(':checked')) {
+      $('.english-lyric').show();
+    } else {
+      $('.english-lyric').hide();
+    }
+
+  })
 
   $('.info-form').submit(function(event){
     event.preventDefault();
@@ -19,9 +35,7 @@ $(document).ready(function(){
       if (userChineseLevel==value.chineseLevel && userGenre==value.genre) {
         $('.song-result-list').append("<a href='song.html'><li><div class='song-result'><div class='image result-square'><img src="+value.albumImage+" alt='album image'></div><div class='result-description'><p>" + value.artistEnglish +"</p><p>"+value.artistMandarin+"</p><p>" + value.songNameEnglish +"</p><p>" + value.songNameMandarin + "</p><p>"+value.genre+"</div></div></li></a>");
       }
-      // else {
-      //   $('.song-result-list').append("Sorry! I don't have any songs like this in my demo");
-      // }
+
 })
   });
 

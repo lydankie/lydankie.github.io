@@ -284,6 +284,13 @@ li p {
 	float: left;
 }
 
+.form-label {
+	display: inline-block;
+	text-align: left;
+	padding-right: 5px;
+	margin: 10px 0px;
+}
+
 .right-column {
 	width: 70%;
 	float: left;
@@ -293,4 +300,13 @@ li p {
 .text-align-left {
 	text-align: left;
 	/*padding-left: 20px;*/
+}
+
+.lyric-display-options {
+	padding-left: 60px;
+	text-align: left;
+}
+
+input {
+	line-height: 1rem;
 }
